@@ -28,7 +28,7 @@ app.use(express.urlencoded());
 app.use(express.static('assests'));
 
 
-//this is dummy contact list it is used when we add contact without using Database
+//this is dummy  data it is used when we add contact without using Database
 var TodoList = [
     {
         task: "Go to gym",
