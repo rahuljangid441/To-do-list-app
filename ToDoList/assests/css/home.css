@@ -1,0 +1,206 @@
+
+
+
+ /* to style the heading */
+h1 {
+    font-family: sans-serif;
+    color: grey;
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  /* to make list with no style */
+  ul {
+    list-style: none;
+  }
+
+  /* to style all input buttons */
+input[type="text"]
+{
+    font-size: 1.5rem;
+    width:70%;
+    border: 0px 2px;
+    height: 50px;
+    position: relative;
+    left: 15%;
+}
+
+/* to style all lables */
+label {
+    display: block;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  /* To give style to description label id*/
+  #description-label{
+    position: absolute;
+    left: 1%;
+    color: grey;
+    font-weight: 400;
+    font-size: 1.8rem;
+    top:17%;
+}
+
+/* To give style to date id*/
+#myDate{
+    width: 25%;
+    position: absolute;
+    left: 15.5%;
+    border: 0px 2px;
+    height: 35px;
+    top: 25%;
+    font-size: 1.5rem;
+    color: grey;
+    
+}
+
+/* To give style to date lable id */
+#date-label
+{
+    position: absolute;
+    left: 8%;
+    color: grey;
+    font-weight: 400;
+    font-size: 1.8rem;
+    top:25%;
+}
+
+/* To give style to category i.e type of work by id */
+#category{
+    width: 25%;
+    position: absolute;
+    left: 59.5%;
+    border: 0px 2px;
+    height: 40px;
+    top: 25%;
+    font-size: 1.5rem;
+    color: grey
+
+}
+/* To give style to category label by id*/
+#category-label{
+    position: absolute;
+    left: 48%;
+    color: grey;
+    font-weight: 400;
+    font-size: 1.8rem;
+    top:25%;
+}
+
+/* To give style to add task button by id*/
+#submit-btn{
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    height: 40px;
+    width: 50%;
+    font-size: 1.5rem;
+    border: none;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 6px;
+}
+
+/* To give style to delete(done) button by id*/
+#delete-btn{
+    position: absolute;
+    top: 5%;
+    left: 82%;
+    height: 40px;
+    width: 15%;
+    font-size: 1.3rem;
+    border: none;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 6px;
+}
+
+.main-container{
+    margin: 10px;
+    margin-bottom: 120px;
+}
+
+.list-container{
+    position: absolute;
+    left: 15%;
+    top:45%;
+    width: 70%;
+    /* background-color: rgb(84, 106, 171); */
+
+}
+
+/* to style a card that contains complete description of task along with date , category of work and done button  by id*/
+#card{
+    background-color: lightgrey;
+    margin: 10px;
+    position: relative;
+    height:100px;
+}
+
+/* to style the task we enter by id */
+#task-todo{
+    font-size: 1.5rem;
+    display: inline;
+    margin-top: 4px;
+    
+}
+/* To give style to type of work by id */
+#type-of-work{
+    position:absolute;
+    font-size: 1.5rem;
+    right:3%;
+    top: 34%;
+    height: 25px;
+    text-align: center;
+    color: white;
+    padding: 7px;
+    width:125px; 
+    border-radius: 6px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* To give style to work-1 container that contains task and done button */
+#work-1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* To give style to work-1 container that contains date and type of work */
+#work-2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* this is to change background color for different type of work */
+
+/* To give style if type of work is personal */
+.personal {
+    background-color: blueviolet;
+  }
+  /* To give style if type of work is woek */
+  .work {
+    background-color: hsla(240, 100%, 50%, 0.534);
+  }
+  /* To give style if type of work is school */
+  .school {
+    background-color: red;
+  }
+  /* To give style if type of work is cleaning */
+  .cleaning {
+    background-color: green;
+  } 
+  /* To give style if type of work is other */
+  .other{
+    background-color: brown;
+  }
+  
+
+   

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="https://kit.fontawesome.com/b3348ae33f.js" crossorigin="anonymous"></script>
+    <title>
+        <!-- Add title that is passed by index.js  -->
+        <%=title%>
+    </title>
+</head>
+
+<body>
+    <h1 id="heading">TODO App</h1>
+    <!-- this container is to create task along with date and type of task -->
+    <div class="main-container">
+        <form action="/create-task" method="post">
+            <label for="task" id="description-label">Description</label>
+            <input type="text" name="task" placeholder="Enter task" required>
+            <label for="date" id="date-label">Date</label>
+            <input type="date" name="date" id="myDate" min="2015-10-28" required>
+
+            <label for="Category" id="category-label">Category</label>
+            <select name="category" id="category">
+                <option value="choose">Choose Category</option>
+                <option value="personal">Personal</option>
+                <option value="work">Work</option>
+                <option value="school">School</option>
+                <option value="cleaning">Cleaning</option>
+                <option value="other">Others</option>
+
+            </select>
+            <button type="submit" id="submit-btn">+ Add Task</button>
+           
+        </form>
+    </div>
+<!-- this is container is to show task along with date and type of task whether it it personal ,work etc -->
+    <div class="list-container">
+
+        <ul>
+            <%for(let i of To_do_list){%>
+                <li>
+                    
+                    <div id="card">
+
+
+                        <div id="work-1">
+                            <p id="task-todo"> <i class="fa-regular fa-hand-point-right"></i>
+                                <%=i.task%>
+                            </p>
+                    <!-- this is to delete task when task is complete -->
+                            <a href="/delete-task/?id=<%= i._id%>">
+                                <button type="submit" id="delete-btn"><i class="fa-solid fa-check"></i>Done</button>
+                            </a>
+                            
+
+                        </div>
+                        <div id="work-2">
+                            <p> <i class="fa-regular fa-calendar"></i>
+                                <%=i.date%>
+                            </p>
+                            <p id="type-of-work" class="<%=i.category%>">
+                                <%=i.category%>
+                            </p>
+                        </div>
+
+                    </div>
+
+                </li>
+
+
+                <%}%>
+
+        </ul>
+    </div>
+
+
+
+
+
+    <script type="text/javascript" src="/js/home.js">
+
+    </script>
+
+
+
+</body>
+
+</html>
